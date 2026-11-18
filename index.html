@@ -500,10 +500,12 @@
     <nav class="tmr-nav">
       <strong>🌿 మన తిమ్మరాజుపేట</strong>
       <div class="links">
-        <a href="#works">అభివృద్ధి పనులు</a>
-        <a href="#gallery">ఫొటోలు</a>
-        <a href="#poster">పోస్టర్</a>
-        <a href="#sources">డైరీలు</a>
+        <a href="#works" data-en="Development Works">అభివృద్ధి పనులు</a>
+        <a href="#finance" data-en="Funds">నిధులు</a>
+        <a href="#gallery" data-en="Photos">ఫొటోలు</a>
+        <a href="#poster" data-en="Poster">పోస్టర్</a>
+        <a href="#sources" data-en="Diaries">డైరీలు</a>
+        <span class="lang-switch"><button type="button" id="langTe" class="active">తెలుగు</button><button type="button" id="langEn">English</button></span>
       </div>
     </nav>
   </header>
@@ -514,9 +516,9 @@
       <div class="hero-inner">
         <div>
           <div class="eyebrow">2021 — 2026</div>
-          <h1>మన తిమ్మరాజుపేట<br />గ్రామ అభివృద్ధి ప్రస్థానం</h1>
-          <p>గ్రామాభివృద్ధే లక్ష్యంగా, ప్రజల సంక్షేమమే ధ్యేయంగా — గ్రామ ప్రజల సహకారంతో చేపట్టిన పనులు, సేవా కార్యక్రమాలు, ఫొటోల సమాహారం.</p>
-          <a class="cta" href="#works">అభివృద్ధి పనులు చూడండి</a>
+          <h1 data-en="Our Thimmarajupeta<br />Village Development Journey">మన తిమ్మరాజుపేట<br />గ్రామ అభివృద్ధి ప్రస్థానం</h1>
+          <p data-en="With village development as the goal and people's welfare as the aim — a collection of works, service activities and photos undertaken with the villagers' support.">గ్రామాభివృద్ధే లక్ష్యంగా, ప్రజల సంక్షేమమే ధ్యేయంగా — గ్రామ ప్రజల సహకారంతో చేపట్టిన పనులు, సేవా కార్యక్రమాలు, ఫొటోల సమాహారం.</p>
+          <a class="cta" href="#works" data-en="View Development Works">అభివృద్ధి పనులు చూడండి</a>
           <a class="cta outline" href="#gallery">అసలు ఫొటోలు</a>
         </div>
         <img alt="గ్రామాభివృద్ధి డైరీకి అందించిన కుటుంబ ఫొటో" src="images/poster.png?v=20261117" />
@@ -725,6 +727,64 @@
       </div>
     </section>
 
+    <!-- Panchayat Funds: Received & Spent -->
+    <section class="container" id="finance">
+      <style>
+        .lang-switch{display:inline-flex;border:1px solid #fff8;border-radius:20px;overflow:hidden}
+        .lang-switch button{background:transparent;color:#fff;border:0;padding:3px 12px;cursor:pointer;font:inherit;font-size:.85rem}
+        .lang-switch button.active{background:#e7bb55;color:#213a28;font-weight:700}
+        #finance .tbl-wrap{overflow-x:auto;margin:14px 0 8px}
+        #finance table{width:100%;border-collapse:collapse;background:#fff;font-size:.92rem}
+        #finance th,#finance td{border:1px solid #dfe7dc;padding:8px 10px;text-align:right}
+        #finance th:first-child,#finance td:first-child{text-align:left}
+        #finance thead th{background:#145b37;color:#fff}
+        #finance tfoot td{background:#eef5ea;font-weight:700}
+        #finance .note{font-size:.85rem;color:#65786c}
+        #finance h3{color:#145b37;margin:28px 0 0}
+      </style>
+      <h2 class="section-title" data-en="Panchayat Funds: Received and Spent (2021–26)">పంచాయతీ నిధులు: వచ్చినవి – ఖర్చు చేసినవి (2021–26)</h2>
+      <p class="intro" data-en="Source: eGramSwaraj Annual Receipts &amp; Payments, Sub-head and Object-head reports, abstract registers and Sources of Revenue reports. Unusable opening/closing balances are excluded; only actual money received and spent is shown. Amounts in ₹.">ఆధారం: eGramSwaraj వార్షిక ఆదాయ–వ్యయ నివేదికలు, సబ్-హెడ్/ఆబ్జెక్ట్-హెడ్ నివేదికలు, అబ్‌స్ట్రాక్ట్ రిజిస్టర్లు, ఆదాయ వనరుల నివేదికలు. వినియోగించలేని ప్రారంభ/ముగింపు నిల్వలను చేర్చలేదు; నిజంగా వచ్చిన, ఖర్చు చేసిన మొత్తాలు మాత్రమే. మొత్తాలు రూపాయలలో.</p>
+
+      <h3 data-en="Table 1 — Funds Received">పట్టిక 1 — పంచాయతీకి వచ్చిన నిధులు</h3>
+      <div class="tbl-wrap"><table>
+        <thead><tr>
+          <th data-en="Year">సంవత్సరం</th>
+          <th data-en="Property tax &amp; own fees">ఆస్తి పన్ను &amp; స్వంత రుసుములు</th>
+          <th data-en="Stamps / registration share">స్టాంపులు / రిజిస్ట్రేషన్ వాటా</th>
+          <th data-en="State grants">రాష్ట్ర గ్రాంట్లు</th>
+          <th data-en="Central Finance Commission grant">కేంద్ర ఆర్థిక సంఘం గ్రాంట్</th>
+          <th data-en="Total received">మొత్తం</th>
+        </tr></thead>
+        <tbody>
+          <tr><td>2021–22</td><td>1,05,996</td><td>78,105</td><td>13,402</td><td>0</td><td>1,97,503</td></tr>
+          <tr><td>2022–23</td><td>2,64,677</td><td>49,804</td><td>21,596</td><td>0</td><td>3,36,077</td></tr>
+          <tr><td>2023–24</td><td>1,07,165</td><td>0</td><td>16,197</td><td>10,44,185</td><td>11,67,547</td></tr>
+          <tr><td>2024–25</td><td>48,075</td><td>36,676</td><td>1,192</td><td>7,76,320</td><td>8,62,263</td></tr>
+          <tr><td>2025–26*</td><td>24,155</td><td>0</td><td>0</td><td>5,98,242</td><td>6,22,397</td></tr>
+        </tbody>
+        <tfoot><tr><td data-en="5-year total">5 ఏళ్ల మొత్తం</td><td>5,50,068</td><td>1,64,585</td><td>52,387</td><td>24,18,747</td><td>31,85,787</td></tr></tfoot>
+      </table></div>
+      <p class="note" data-en="*2025–26 is ongoing. The ₹6,10,150 moved from the old 14th Finance Commission head in 2025–26 is an accounting reclassification of existing money, not new funds, and is not counted as received.">*2025–26 సంవత్సరం కొనసాగుతోంది. 2025–26లో పాత 14వ ఆర్థిక సంఘం పద్దు నుంచి మారిన ₹6,10,150 అనేది ఉన్న నిధుల అకౌంటింగ్ సర్దుబాటు మాత్రమే; కొత్త నిధులు కావు, అందువల్ల వచ్చినవిగా లెక్కించలేదు.</p>
+
+      <h3 data-en="Table 2 — How Funds Were Spent (by sector)">పట్టిక 2 — నిధుల వినియోగం (రంగాల వారీగా)</h3>
+      <div class="tbl-wrap"><table>
+        <thead><tr>
+          <th data-en="Sector">రంగం</th><th>2021–22</th><th>2022–23</th><th>2023–24</th><th>2024–25</th><th>2025–26*</th><th data-en="Total">మొత్తం</th>
+        </tr></thead>
+        <tbody>
+          <tr><td data-en="Water, sanitation, sewerage, drainage, solid waste">తాగునీరు, పారిశుద్ధ్యం, డ్రైనేజీ, ఘన వ్యర్థాల నిర్వహణ</td><td>0</td><td>2,63,422</td><td>4,14,229</td><td>6,14,217</td><td>3,43,080</td><td>16,34,948</td></tr>
+          <tr><td data-en="Roads &amp; transportation">రహదారులు &amp; రవాణా</td><td>0</td><td>0</td><td>0</td><td>91,318</td><td>90,000</td><td>1,81,318</td></tr>
+          <tr><td data-en="Street lights / electrification">వీధి దీపాలు / విద్యుదీకరణ</td><td>0</td><td>49,685</td><td>0</td><td>0</td><td>0</td><td>49,685</td></tr>
+          <tr><td data-en="Community assets &amp; machinery">సామాజిక ఆస్తులు &amp; యంత్రాలు</td><td>0</td><td>0</td><td>0</td><td>44,955</td><td>1,08,900</td><td>1,53,855</td></tr>
+          <tr><td data-en="Health &amp; family welfare">ఆరోగ్యం &amp; కుటుంబ సంక్షేమం</td><td>0</td><td>0</td><td>0</td><td>0</td><td>15,749</td><td>15,749</td></tr>
+          <tr><td data-en="Administration, salaries, office, Panchayat Bhawan">పరిపాలన, జీతాలు, కార్యాలయ ఖర్చులు, పంచాయతీ భవనం</td><td>1,56,850</td><td>42,840</td><td>1,90,812</td><td>0</td><td>2,24,365</td><td>6,14,867</td></tr>
+          <tr><td data-en="General development / other (incl. 14th Finance Commission works)">సాధారణ అభివృద్ధి / ఇతరాలు (14వ ఆర్థిక సంఘం పనులతో సహా)</td><td>11,79,342</td><td>59,900</td><td>1,42,640</td><td>0</td><td>0</td><td>13,81,882</td></tr>
+        </tbody>
+        <tfoot><tr><td data-en="Total spent">మొత్తం ఖర్చు</td><td>13,36,192</td><td>4,15,847</td><td>7,47,681</td><td>7,50,490</td><td>7,82,094</td><td>40,32,304</td></tr></tfoot>
+      </table></div>
+      <p class="note" data-en="In 2021–22 spending exceeded receipts because ₹10,21,342 of unspent 14th Finance Commission funds carried over from earlier years was used.">2021–22లో ఆదాయం కంటే ఖర్చు ఎక్కువగా ఉండటానికి కారణం, అంతకుముందు సంవత్సరాల నుంచి మిగిలిన 14వ ఆర్థిక సంఘం నిధులు ₹10,21,342 వినియోగించడమే.</p>
+    </section>
+
     <!-- Blogspot Diary Links -->
     <section class="container" id="sources">
       <h2 class="section-title">అభివృద్ధి డైరీలు</h2>
@@ -739,8 +799,8 @@
 
   <!-- Footer -->
   <footer class="tmr-footer">
-    <b>మన గ్రామం – మన బాధ్యత – మన అభివృద్ధి</b>
-    <p>తిమ్మరాజుపేట | 2021–2026</p>
+    <b data-en="Our Village – Our Responsibility – Our Development">మన గ్రామం – మన బాధ్యత – మన అభివృద్ధి</b>
+    <p data-en="Thimmarajupeta | 2021–2026">తిమ్మరాజుపేట | 2021–2026</p>
     <small>ఈ వెబ్‌సైట్ గ్రామాభివృద్ధి పనుల సమాచార, ఫొటో సంకలనం.</small>
   </footer>
 
@@ -1100,6 +1160,23 @@
 
     drawFilters();
     drawPhotos();
+  </script>
+  <script>
+    (function(){
+      const els=[...document.querySelectorAll('[data-en]')];
+      els.forEach(e=>e.dataset.te=e.innerHTML);
+      function setLang(l){
+        els.forEach(e=>e.innerHTML=l==='en'?e.dataset.en:e.dataset.te);
+        document.documentElement.lang=l==='en'?'en':'te';
+        document.getElementById('langTe').classList.toggle('active',l!=='en');
+        document.getElementById('langEn').classList.toggle('active',l==='en');
+        try{localStorage.setItem('tmrLang',l)}catch(x){}
+      }
+      document.getElementById('langTe').onclick=()=>setLang('te');
+      document.getElementById('langEn').onclick=()=>setLang('en');
+      let s='te';try{s=localStorage.getItem('tmrLang')||'te'}catch(x){}
+      if(s==='en')setLang('en');
+    })();
   </script>
 </body>
 </html>
