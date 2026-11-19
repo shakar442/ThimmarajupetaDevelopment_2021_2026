@@ -505,6 +505,7 @@
         <a href="#gallery" data-en="Photos">ఫొటోలు</a>
         <a href="#poster" data-en="Poster">పోస్టర్</a>
         <a href="#sources" data-en="Diaries">డైరీలు</a>
+        <a href="#feedback" data-en="Feedback">అభిప్రాయాలు</a>
         <span class="lang-switch"><button type="button" id="langTe" class="active">తెలుగు</button><button type="button" id="langEn">English</button></span>
       </div>
     </nav>
@@ -525,8 +526,15 @@
       </div>
     </section>
 
-    <!-- 32 Works Section -->
+    <!-- Works Section -->
     <section class="container" id="works">
+      <style>
+        #works .work-row{display:flex;gap:12px;align-items:flex-start}
+        #works .work-thumbs{display:flex;flex-direction:column;gap:6px;flex:0 0 120px}
+        #works .work-thumbs img{width:120px;height:88px;object-fit:cover;border-radius:8px;border:1px solid #dfe7dc;background:#e7ebe4}
+        #works .work-text{min-width:0}
+        @media(max-width:520px){#works .work-thumbs{flex-basis:96px}#works .work-thumbs img{width:96px;height:72px}}
+      </style>
       <h2 class="section-title">ఐదేళ్ల అభివృద్ధి — ఒకేచోట</h2>
       <p class="intro">రహదారులు, తాగునీరు, పారిశుద్ధ్యం, విద్య, పండుగలు, ప్రజాసేవ, దేవాలయాల అభివృద్ధి — అందించిన వివరాల ఆధారంగా సంకలనం.</p>
 
@@ -541,36 +549,46 @@
         <article class="category">
           <h3>రహదారులు, డ్రైనేజీలు మరియు మౌలిక సదుపాయాలు</h3>
           <div class="work">
-            <b>1. ఎస్సీ కాలనీ అభివృద్ధి</b>
-            <p>ప్రధాన రహదారి నుంచి డాక్టర్ బి.ఆర్. అంబేద్కర్ విగ్రహం వరకు డ్రైనేజీ నిర్మాణం; డ్రామా స్టేజీకి రంగులు, తలుపులు, కిటికీలు, మరమ్మతులు; స్టేజీ ముందు ప్లాట్‌ఫామ్ నిర్మాణం.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/sc-colony.jpg" alt="ఎస్సీ కాలనీ అభివృద్ధి" loading="lazy" /></div><div class="work-text">
+              <b>1. ఎస్సీ కాలనీ అభివృద్ధి</b>
+              <p>మెయిన్ రోడ్ నుంచి అంబేద్కర్ విగ్రహం వరకు డ్రైనేజీ; గ్రామ స్టేజ్ పెయింటింగ్స్, తలుపులు, కిటికీలు వేసి మరమ్మతులు; స్టేజ్ ముందున్న స్థలం అంతా ప్లాట్‌ఫారం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>2. కర్రి వారి వీధిలో సీసీ రోడ్డు</b>
-            <p>ప్రజల రాకపోకలకు సౌకర్యంగా కొత్త సిమెంట్ కాంక్రీట్ రోడ్డు నిర్మాణం.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/karri-cc-road.jpg" alt="కర్రి వారి వీధిలో సీసీ రోడ్డు" loading="lazy" /></div><div class="work-text">
+              <b>2. కర్రి వారి వీధిలో సీసీ రోడ్డు</b>
+              <p>కర్రి వారి వీధిలో ప్రజల రాకపోకలకు సౌకర్యంగా కొత్త సిమెంట్ కాంక్రీట్ (సీసీ) రోడ్డు నిర్మించాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>3. ఆంజనేయస్వామి ఆలయం నుంచి పంచాయతీ వరకు డ్రైనేజీ</b>
-            <p>రహదారికి ఇరువైపులా డ్రైనేజీలు, వాటిపై కాంక్రీట్ పైకప్పుల ఏర్పాటు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/anjaneya-drain.jpg" alt="ఆంజనేయస్వామి గుడి దగ్గర నుంచి పంచాయతీ వరకు డ్రైనేజీ" loading="lazy" /></div><div class="work-text">
+              <b>3. ఆంజనేయస్వామి గుడి దగ్గర నుంచి పంచాయతీ వరకు డ్రైనేజీ</b>
+              <p>ఇరువైపులా డ్రైనేజీ మరియు వాటిపై పైకప్పులు.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>4. శిథిలావస్థలో ఉన్న ర్యాంపుల పునర్నిర్మాణం</b>
-            <p>కో-ఆపరేటివ్ బ్యాంకు, వీరు నాయుడు గారి దుకాణం, భీశెట్టి అప్పారావు గారి ఇంటి పక్కన, రెండో వార్డు, దుర్గాంబిక ఆలయం ఎదురుగా, ఐదో వార్డులో దెబ్బతిన్న డ్రైనేజీ ర్యాంపుల పునర్నిర్మాణం.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/ramps.jpg" alt="శిథిలావస్థలో ఉన్న ర్యాంపుల పునర్నిర్మాణం" loading="lazy" /></div><div class="work-text">
+              <b>4. శిథిలావస్థలో ఉన్న ర్యాంపుల పునర్నిర్మాణం</b>
+              <p>కో-ఆపరేటివ్ బ్యాంక్, వీరు నాయుడు గారి షాప్, భీశెట్టి అప్పారావు గారి ఇంటి పక్కన, రెండో వార్డులో, దుర్గాంబిక గుడి ఎదుట ప్లాట్‌ఫాం, ఐదో వార్డులో రోడ్లకు అడ్డంగా ఉన్న డ్రైనేజీపై ర్యాంపులు శిథిలావస్థలో ఉన్నందున పటిష్టంగా కొత్తవి నిర్మించాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>5. రామాలయం నుంచి సచివాలయం వరకు డ్రైనేజీ</b>
-            <p>డ్రైనేజీ మరమ్మతులు, అవసరమైన చోట్ల కాంక్రీట్ పైకప్పులు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/ramalayam-sachivalayam.jpg" alt="రామాలయం నుంచి సచివాలయం వరకు డ్రైనేజీ" loading="lazy" /></div><div class="work-text">
+              <b>5. రామాలయం నుంచి సచివాలయం వరకు డ్రైనేజీ</b>
+              <p>రామాలయం నుంచి సచివాలయం వరకు ఉన్న డ్రైనేజీ మొత్తాన్ని సరిచేసి పైకప్పులు వేశాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>6. ఒకటో వార్డులో కొత్త డ్రైనేజీ</b>
-            <p>ప్రాథమిక పాఠశాల ఎదురుగా కొత్త డ్రైనేజీ నిర్మాణం.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/ward1-school-drain.jpg" alt="ఒకటో వార్డులో కొత్త డ్రైనేజీ" loading="lazy" /></div><div class="work-text">
+              <b>6. ఒకటో వార్డులో కొత్త డ్రైనేజీ</b>
+              <p>ఒకటో వార్డులో ప్రాథమిక పాఠశాల ఎదురుగా ఉన్న డ్రైనేజీ కొత్తగా నిర్మించాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>7. రామాలయం నుంచి వీరు నాయుడు గారి దుకాణం వరకు అభివృద్ధి</b>
-            <p>కొత్త డ్రైనేజీ, కాంక్రీట్ పైకప్పులు, స్టేజీ ముందు ప్లాట్‌ఫామ్ నిర్మాణం.</p>
-          </div>
-          <div class="work">
-            <b>8. సచివాలయం పరిసరాల్లో డ్రైనేజీ అభివృద్ధి</b>
-            <p>కాకి బాపునాయుడు గారి ఇంటి నుంచి సచివాలయం వైపు డ్రైనేజీ పనులు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/suribabu-drain.jpg" alt="శరగడం శ్రీనివాసరావు ఇంటి నుంచి బొడ్డేడ సూరిబాబు ఇంటి వరకు డ్రైనేజీ & సీసీ రోడ్డు" loading="lazy" /></div><div class="work-text">
+              <b>7. శరగడం శ్రీనివాసరావు ఇంటి నుంచి బొడ్డేడ సూరిబాబు ఇంటి వరకు డ్రైనేజీ & సీసీ రోడ్డు</b>
+              <p>గత కొన్ని సంవత్సరాల బట్టి జరగని పనిని డ్రైనేజీ మరియు సీసీ రోడ్డు నిర్మాణంతో పూర్తి చేశాం.</p>
+            </div></div>
           </div>
         </article>
 
@@ -578,20 +596,28 @@
         <article class="category">
           <h3>తాగునీటి సరఫరా మరియు పైప్‌లైన్ అభివృద్ధి</h3>
           <div class="work">
-            <b>9. రెండు, ఎనిమిది వార్డుల్లో కొత్త పైప్‌లైన్లు</b>
-            <p>యశోద పాన్ షాపు నుంచి వీధి చివరి వరకు పాత పైప్‌లైన్ల స్థానంలో కొత్తవి.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/pipelines.jpg" alt="రెండు, ఎనిమిది వార్డుల్లో కొత్త పైప్‌లైన్లు" loading="lazy" /></div><div class="work-text">
+              <b>8. రెండు, ఎనిమిది వార్డుల్లో కొత్త పైప్‌లైన్లు</b>
+              <p>యశోద పాన్ షాప్ నుంచి చివరి వరకు శిథిలావస్థలో ఉన్న పైప్‌లైన్ల స్థానంలో కొత్తవి వేయడం జరిగింది.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>10. ఒకటో వార్డులో తాగునీటి సౌకర్యం</b>
-            <p>రామాలయం నుంచి వీధి చివరి వరకు కొత్త తాగునీటి పైప్‌లైన్.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/ward1-water.jpg" alt="ఒకటో వార్డులో తాగునీటి సౌకర్యం" loading="lazy" /></div><div class="work-text">
+              <b>9. ఒకటో వార్డులో తాగునీటి సౌకర్యం</b>
+              <p>రామాలయం నుంచి వీధి చివరి వరకు కొత్త తాగునీటి పైప్‌లైన్ ఏర్పాటు చేశాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>11. నీటి సరఫరా విస్తరణ</b>
-            <p>తాగునీటి సౌకర్యం లేని పలు ప్రాంతాలకు పైప్‌లైన్ల విస్తరణ.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/water-expansion.jpg" alt="నీటి సరఫరా విస్తరణ" loading="lazy" /></div><div class="work-text">
+              <b>10. నీటి సరఫరా విస్తరణ</b>
+              <p>గ్రామంలో తాగునీటి సౌకర్యం లేని పలు ప్రాంతాలకు కొత్త పైప్‌లైన్లు విస్తరించి, మరిన్ని కుటుంబాలకు తాగునీరు అందేలా కృషి చేశాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>12. నిరంతర తాగునీటి నిర్వహణ</b>
-            <p>వాటర్ ట్యాంకుల శుభ్రత, బోర్ల మరమ్మతులు, లీకేజీల నివారణ, కుళాయిల మరమ్మతులు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/water-maintenance.jpg" alt="నిరంతర తాగునీటి నిర్వహణ" loading="lazy" /></div><div class="work-text">
+              <b>11. నిరంతర తాగునీటి నిర్వహణ</b>
+              <p>ఓవర్‌హెడ్ వాటర్ ట్యాంకులను ఎప్పటికప్పుడు శుభ్రపరచడం, బోర్ల మరమ్మతులు, పైప్‌లైన్ లీకేజీల నివారణ, కుళాయిల మరమ్మతులు చేపడుతూ అంతరాయాలు తగ్గించేందుకు నిరంతరం కృషి చేశాం.</p>
+            </div></div>
           </div>
         </article>
 
@@ -599,28 +625,40 @@
         <article class="category">
           <h3>పారిశుద్ధ్యం, పర్యావరణ పరిరక్షణ మరియు వీధి దీపాలు</h3>
           <div class="work">
-            <b>13. వీధి దీపాల ఏర్పాటు, నిర్వహణ</b>
-            <p>కొత్త వీధి దీపాలు, సుమారు మూడు నెలలకు ఒకసారి మరమ్మతులు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/street-lights.jpg" alt="వీధి దీపాల ఏర్పాటు, నిర్వహణ" loading="lazy" /><img src="images/pamphlet/sanitation-lights.jpg" alt="వీధి దీపాల ఏర్పాటు, నిర్వహణ" loading="lazy" /></div><div class="work-text">
+              <b>12. వీధి దీపాల ఏర్పాటు, నిర్వహణ</b>
+              <p>గ్రామంలో అవసరమైన పలు ప్రాంతాల్లో కొత్త వీధి దీపాలు ఏర్పాటు చేశాం. సుమారు ప్రతి మూడు నెలలకు ఒకసారి వీధి దీపాల మరమ్మతులు చేపడుతూ, వెలగని దీపాలను పునరుద్ధరించాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>14. గ్రామ పరిశుభ్రతకు ప్రాధాన్యత</b>
-            <p>వీధులు, డ్రైనేజీలు, బహిరంగ ప్రదేశాల్లో చెత్త తొలగింపు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/cleanliness.jpg" alt="గ్రామ పరిశుభ్రతకు ప్రాధాన్యత" loading="lazy" /></div><div class="work-text">
+              <b>13. గ్రామ పరిశుభ్రతకు ప్రాధాన్యత</b>
+              <p>గ్రామంలోని వీధులు, డ్రైనేజీలు, బహిరంగ ప్రదేశాల్లో పేరుకుపోయిన చెత్తను ఎప్పటికప్పుడు తొలగిస్తూ పరిశుభ్రతకు అధిక ప్రాధాన్యత ఇచ్చాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>15. దోమల నివారణ, పారిశుద్ధ్య చర్యలు</b>
-            <p>మందుల పిచికారీ, బ్లీచింగ్, డ్రైనేజీల పూడికతీత.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/mosquito.jpg" alt="దోమల నివారణ, పారిశుద్ధ్య చర్యలు" loading="lazy" /></div><div class="work-text">
+              <b>14. దోమల నివారణ, పారిశుద్ధ్య చర్యలు</b>
+              <p>దోమల నివారణకు మందుల పిచికారీ, బ్లీచింగ్ చల్లడం, డ్రైనేజీల పూడికతీత వంటి కార్యక్రమాలు చేపట్టాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>16. పచ్చదనం పెంపొందించడం</b>
-            <p>పంచాయతీ కార్యాలయం చుట్టూ, గ్రామంలో మొక్కలు నాటడం, మొక్కల పంపిణీ.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/greening.jpg" alt="పచ్చదనం పెంపొందించడం" loading="lazy" /></div><div class="work-text">
+              <b>15. పచ్చదనం పెంపొందించడం</b>
+              <p>గ్రామ పంచాయతీ కార్యాలయం చుట్టూ, గ్రామంలోని పలు ప్రాంతాల్లో మొక్కలు నాటి పర్యావరణ పరిరక్షణకు కృషి చేశాం. పెద్ద ఎత్తున మొక్కల పంపిణీ, నాటే కార్యక్రమాలు కూడా చేపట్టాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>17. ప్రజల సౌకర్యార్థం బెంచీలు</b>
-            <p>ప్రజలు, వృద్ధులు కూర్చునేందుకు పలు చోట్ల బెంచీలు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/benches2.jpg" alt="ప్రజల సౌకర్యార్థం బెంచీలు" loading="lazy" /><img src="images/pamphlet/benches.jpg" alt="ప్రజల సౌకర్యార్థం బెంచీలు" loading="lazy" /></div><div class="work-text">
+              <b>16. ప్రజల సౌకర్యార్థం బెంచీలు</b>
+              <p>పంచాయతీ చుట్టూ మొక్కలు, అలాగే గ్రామంలోని పలు ముఖ్యమైన ప్రదేశాల్లో ప్రజలు, ముఖ్యంగా వృద్ధులు కూర్చునేందుకు బెంచీలు ఏర్పాటు చేశాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>18. శ్మశానవాటిక అభివృద్ధి, నిర్వహణ</b>
-            <p>శ్మశానవాటిక శుభ్రత, అంత్యక్రియలకు కాస్ట్ ఐరన్ (పోత ఇనుము) దహన వేదిక తయారీ; వర్మీ కంపోస్ట్ కేంద్రం పరిసరాల శుభ్రత.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/cemetery.jpg" alt="శ్మశానవాటిక అభివృద్ధి, నిర్వహణ" loading="lazy" /></div><div class="work-text">
+              <b>17. శ్మశానవాటిక అభివృద్ధి, నిర్వహణ</b>
+              <p>శ్మశానవాటికను ఎప్పటికప్పుడు పరిశుభ్రంగా ఉంచుతూ అవసరమైన నిర్వహణ పనులు చేపట్టాం. అంత్యక్రియల నిర్వహణకు ప్రత్యేకంగా కాస్ట్ ఐరన్ (పోత ఇనుము)తో దహన వేదికను తయారు చేయించాం.</p>
+            </div></div>
           </div>
         </article>
 
@@ -628,12 +666,22 @@
         <article class="category">
           <h3>విద్యాసంస్థలు మరియు ప్రజా సౌకర్యాలు</h3>
           <div class="work">
-            <b>19. ప్రాథమిక పాఠశాల అభివృద్ధి</b>
-            <p>మరుగుదొడ్ల మరమ్మతులు, ఇతర నిర్వహణ పనులు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/primary-school.jpg" alt="ప్రాథమిక పాఠశాల అభివృద్ధి" loading="lazy" /></div><div class="work-text">
+              <b>18. ప్రాథమిక పాఠశాల అభివృద్ధి</b>
+              <p>గ్రామంలోని ప్రాథమిక పాఠశాలల్లో మరుగుదొడ్ల మరమ్మతులు, ఇతర అవసరమైన నిర్వహణ పనులు చేపట్టి విద్యార్థులకు పరిశుభ్రమైన వాతావరణం కల్పించేందుకు కృషి చేశాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>20. అంగన్‌వాడీ కేంద్రాల అభివృద్ధి</b>
-            <p>మరుగుదొడ్ల నిర్మాణం, అవసరమైన మరమ్మతులు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/anganwadi.jpg" alt="అంగన్‌వాడీ కేంద్రాల అభివృద్ధి" loading="lazy" /></div><div class="work-text">
+              <b>19. అంగన్‌వాడీ కేంద్రాల అభివృద్ధి</b>
+              <p>అంగన్‌వాడీ కేంద్రాల్లో మరుగుదొడ్ల నిర్మాణం, అవసరమైన మరమ్మతులు చేపట్టి చిన్నారులు, సిబ్బందికి మెరుగైన సౌకర్యాలు కల్పించాం.</p>
+            </div></div>
+          </div>
+          <div class="work">
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/mpp-school.jpg" alt="ఎంపీపీ స్కూలు నూతన భవనం" loading="lazy" /></div><div class="work-text">
+              <b>20. ఎంపీపీ స్కూలు నూతన భవనం</b>
+              <p>ఎంపీపీ స్కూలు నూతన భవనం మరియు చుట్టూ మొక్కలు నియమించాం.</p>
+            </div></div>
           </div>
         </article>
 
@@ -641,16 +689,28 @@
         <article class="category">
           <h3>పండుగలు, సాంస్కృతిక కార్యక్రమాలు మరియు ప్రజల భాగస్వామ్యం</h3>
           <div class="work">
-            <b>21. గ్రామ పండుగల ఘన నిర్వహణ</b>
-            <p>ఉత్సవ కమిటీ, ప్రజల సహకారంతో పండుగలు; క్యాలెండర్ల పంపిణీ.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/festivals-calendar.jpg" alt="గ్రామ పండుగల ఘన నిర్వహణ" loading="lazy" /><img src="images/pamphlet/festivals-participation.jpg" alt="గ్రామ పండుగల ఘన నిర్వహణ" loading="lazy" /></div><div class="work-text">
+              <b>21. గ్రామ పండుగల ఘన నిర్వహణ</b>
+              <p>ఉత్సవ కమిటీ, గ్రామ ప్రజల సహకారంతో ప్రతి సంవత్సరం పండుగలను ఘనంగా నిర్వహించాం. గ్రామ ప్రజలకు పండుగల వివరాలతో కూడిన క్యాలెండర్లను అందించాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>22. ఉత్సవ కమిటీ ఆదాయ వ్యయాల్లో పారదర్శకత</b>
-            <p>జమా ఖర్చులను డిజిటల్ బోర్డుల ద్వారా ప్రజలకు తెలియజేయడం.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/transparency-board.jpg" alt="ఉత్సవ కమిటీ ఆదాయ వ్యయాల్లో పారదర్శకత" loading="lazy" /></div><div class="work-text">
+              <b>22. ఉత్సవ కమిటీ ఆదాయ వ్యయాల్లో పారదర్శకత</b>
+              <p>ప్రతి సంవత్సరం ఉత్సవ కమిటీ జమా ఖర్చుల వివరాలను డిజిటల్ బోర్డుల ద్వారా ప్రజలందరికీ తెలియజేస్తూ పారదర్శకతకు ప్రాధాన్యత ఇచ్చాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>23. క్రీడలు, సాంస్కృతిక కార్యక్రమాలు</b>
-            <p>కబడ్డీ, గుర్రపు స్వారీ, ముగ్గుల పోటీలు తదితర కార్యక్రమాలు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/sports-cultural.jpg" alt="క్రీడలు, సాంస్కృతిక కార్యక్రమాలు" loading="lazy" /></div><div class="work-text">
+              <b>23. క్రీడలు, సాంస్కృతిక కార్యక్రమాలు</b>
+              <p>కబడ్డీ పోటీలు, గుర్రపు స్వారీ పోటీలు, ముగ్గుల పోటీలు వంటి కార్యక్రమాలు నిర్వహిస్తూ గ్రామ ప్రజలందరూ ఉత్సాహంగా పాల్గొనేలా పండుగలను అంగరంగ వైభవంగా జరిపించాం.</p>
+            </div></div>
+          </div>
+          <div class="work">
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/kabaddi.jpg" alt="రాష్ట్రస్థాయి కబడ్డీ పోటీలు" loading="lazy" /></div><div class="work-text">
+              <b>24. రాష్ట్రస్థాయి కబడ్డీ పోటీలు</b>
+              <p>మన గ్రామంలో రాష్ట్రస్థాయి లేడీస్ అండ్ బాయ్స్ కబడ్డీ పోటీలు నిర్వహించి, ఆంధ్ర రాష్ట్రంలో మన గ్రామానికి పేరు తీసుకొచ్చాం.</p>
+            </div></div>
           </div>
         </article>
 
@@ -658,16 +718,16 @@
         <article class="category">
           <h3>ప్రజాపాలన, సంక్షేమం మరియు సేవా కార్యక్రమాలు</h3>
           <div class="work">
-            <b>24. గ్రామసభల నిర్వహణ</b>
-            <p>ప్రజల సమస్యలపై చర్చలు, తీర్మానాలు, పరిష్కార ప్రయత్నాలు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/gram-sabha.jpg" alt="గ్రామసభల నిర్వహణ" loading="lazy" /></div><div class="work-text">
+              <b>25. గ్రామసభల నిర్వహణ</b>
+              <p>గ్రామంలో ప్రతి గ్రామసభను తూచా తప్పకుండా నిర్వహించి, ప్రజల సమస్యలను ఎప్పటికప్పుడు తెలుసుకొని వాటికి తీర్మానం చేసి పరిష్కారాల వైపుగా పని చేశాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>25. రాజకీయాలకు అతీతంగా సంక్షేమ పథకాలు</b>
-            <p>అర్హులందరికీ ప్రభుత్వ సంక్షేమ పథకాలు అందేలా కృషి.</p>
-          </div>
-          <div class="work">
-            <b>26. కరోనా సమయంలో సేవా కార్యక్రమాలు</b>
-            <p>ప్రజలు, దాతల సహకారంతో వైద్య కిట్ల పంపిణీ, ఆక్సిజన్ సహాయం.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/corona.jpg" alt="కరోనా సమయంలో సేవా కార్యక్రమాలు" loading="lazy" /></div><div class="work-text">
+              <b>26. కరోనా సమయంలో సేవా కార్యక్రమాలు</b>
+              <p>కరోనా మహమ్మారి సమయంలో అవసరమైన వారికి వైద్య కిట్ల పంపిణీ, ఆక్సిజన్ సహాయం వంటి కార్యక్రమాలను ప్రజలు, దాతల సహకారంతో చేపట్టాం.</p>
+            </div></div>
           </div>
         </article>
 
@@ -675,29 +735,68 @@
         <article class="category">
           <h3>దేవాలయాల అభివృద్ధి మరియు ఆధ్యాత్మిక కార్యక్రమాలు</h3>
           <div class="work">
-            <b>27. రామాలయం అభివృద్ధి</b>
-            <p>గ్రామ ప్రజల సహకారంతో కొత్త రంగులు, సుందరీకరణ.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/ramalayam.jpg" alt="రామాలయం అభివృద్ధి" loading="lazy" /></div><div class="work-text">
+              <b>27. రామాలయం అభివృద్ధి</b>
+              <p>గ్రామ ప్రజల సహకారంతో రామాలయానికి కొత్తగా రంగులు వేయించి, ఆలయ సుందరీకరణకు కృషి చేశాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>28. మరిడితల్లి ఆలయ అభివృద్ధి</b>
-            <p>ఆలయం చుట్టూ ప్రహరీ గోడ, ప్రాంగణంలో టైల్స్.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/maridithalli.jpg" alt="మరిడితల్లి ఆలయ అభివృద్ధి" loading="lazy" /></div><div class="work-text">
+              <b>28. మరిడితల్లి ఆలయ అభివృద్ధి</b>
+              <p>మరిడితల్లి అమ్మవారి ఆలయం చుట్టూ ప్రహరీ గోడ నిర్మించి, ప్రాంగణంలో టైల్స్ వేయించి ఆలయ పరిసరాలను అభివృద్ధి చేశాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>29. పశువుల మారమ్మతల్లి చెట్టు వద్ద అభివృద్ధి</b>
-            <p>చెట్టు వద్ద కొత్త దిమ్మ నిర్మాణం.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/maramma.jpg" alt="పశువుల మారమ్మతల్లి చెట్టు వద్ద అభివృద్ధి" loading="lazy" /></div><div class="work-text">
+              <b>29. పశువుల మారమ్మతల్లి చెట్టు వద్ద అభివృద్ధి</b>
+              <p>పశువుల మారమ్మతల్లి చెట్టు వద్ద భక్తులు కూర్చునేందుకు, పూజలు నిర్వహించేందుకు సౌకర్యంగా కొత్తగా దిమ్మ నిర్మించాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>30. దుర్గాంబిక అమ్మవారి ఆలయ అభివృద్ధి</b>
-            <p>ఆలయం చుట్టూ కొత్త ప్లాట్‌ఫామ్.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/durgambika.jpg" alt="దుర్గాంబిక అమ్మవారి ఆలయ అభివృద్ధి" loading="lazy" /></div><div class="work-text">
+              <b>30. దుర్గాంబిక అమ్మవారి ఆలయ అభివృద్ధి</b>
+              <p>దుర్గాంబిక అమ్మవారి ఆలయం చుట్టూ కొత్తగా ప్లాట్‌ఫామ్ నిర్మించి, ఆలయ ప్రాంగణాన్ని అభివృద్ధి చేశాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>31. ముత్యాలతల్లి ఆలయానికి సహకారం</b>
-            <p>ప్రజలు, భక్తులు, దాతల సహకారంతో అభివృద్ధి కార్యక్రమాలకు తోడ్పాటు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/gowri-parameswara.jpg" alt="శ్రీ గౌరీ పరమేశ్వర గుడి ముందు సీసీ రోడ్డు" loading="lazy" /></div><div class="work-text">
+              <b>31. శ్రీ గౌరీ పరమేశ్వర గుడి ముందు సీసీ రోడ్డు</b>
+              <p>గుడి ముందు నుంచి వీరు నాయుడు షాపు వరకు సీసీ రోడ్డు నిర్మించాం.</p>
+            </div></div>
           </div>
           <div class="work">
-            <b>32. మహాశివరాత్రి ప్రత్యేక కార్యక్రమాలు</b>
-            <p>ప్రత్యేక పూజలు, అన్నసమారాధన, ఆధ్యాత్మిక, సాంస్కృతిక కార్యక్రమాలు.</p>
+            <div class="work-row"><div class="work-thumbs"><img src="images/pamphlet/mahashivaratri.jpg" alt="మహాశివరాత్రి ప్రత్యేక కార్యక్రమాలు" loading="lazy" /></div><div class="work-text">
+              <b>32. మహాశివరాత్రి ప్రత్యేక కార్యక్రమాలు</b>
+              <p>ప్రతి సంవత్సరం మహాశివరాత్రి పర్వదినాన్ని పురస్కరించుకుని గ్రామ ప్రజలు, భక్తులు మరియు దాతల సహకారంతో ప్రత్యేక పూజలు, అన్నసమారాధన, ఆధ్యాత్మిక మరియు సాంస్కృతిక కార్యక్రమాలను ఘనంగా నిర్వహించాం.</p>
+            </div></div>
           </div>
+        </article>
+
+      </div>
+
+      <h2 class="section-title" id="before2021" style="margin-top:44px">2021కి ముందు చేసిన గ్రామ అభివృద్ధి పనులు</h2>
+      <p class="intro">ప్రజల సహాయ సహకారాలతో అంతకుముందు చేపట్టిన పనులు.</p>
+      <div class="categories">
+        <article class="category">
+          <div class="work"><b>1.</b> సంపత్ వినాయక గుడి నిర్మాణం.</div>
+          <div class="work"><b>2.</b> గ్రామ శ్మశానవాటిక అభివృద్ధి మరియు ఆధునీకరణ (గ్రామ ప్రజల సహకారంతో సువిశాల శ్మశానవాటిక నిర్మాణం).</div>
+          <div class="work"><b>3.</b> గౌరీ పరమేశ్వరుల ఆలయ నిర్మాణం గ్రామ ప్రజల సహకారంతో.</div>
+          <div class="work"><b>4.</b> నిరుపయోగంగా ఉన్న అంగన్‌వాడీ భవనం చుట్టుపక్కల పరిసరాలను పరిశుభ్రం చేసి, గ్రామ అభ్యుదయ సంఘ సభ్యులతో కలిసి ఉపయోగంలోకి తీసుకురావడం.</div>
+          <div class="work"><b>5.</b> సీసీ రోడ్లు, డ్రైనేజీల నిర్మాణం — ప్రజలు, ప్రభుత్వ సహకారంతో సుమారు ₹8 లక్షల నిధులతో.</div>
+          <div class="work"><b>6.</b> పంచాయతీ భవనం నూతన నిర్మాణానికి ప్రజలు, ప్రభుత్వ సహకారంతో సుమారు ₹13 లక్షల గ్రాంటు సేకరించి నిర్మించడం.</div>
+          <div class="work"><b>7.</b> దుర్గాలమ్మతల్లి గుడి ఎదురుగా సీసీ రోడ్డు, చుట్టూ సిమెంట్ ప్లాట్‌ఫాం, గుడి వెనుక రక్షణ గోడ — సుమారు ₹5 లక్షలతో నిర్మాణం.</div>
+          <div class="work"><b>8.</b> ప్రజల సహకారంతో ఆధ్యాత్మిక, సాంస్కృతిక కార్యక్రమాలు (వినాయక నవరాత్రులు, మహాశివరాత్రి, సంక్రాంతి సంబరాలు).</div>
+          <div class="work"><b>9.</b> సేవా కార్యక్రమాలు — వైద్య శిబిరాలు (మెడికల్ క్యాంపులు), వృద్ధులకు దుప్పట్లు, చీరలు పంపిణీ.</div>
+        </article>
+      </div>
+
+      <h3 style="margin-top:36px;color:#145b37">ఇతర పనులు (డైరీల ఆధారంగా)</h3>
+      <div class="categories">
+        <article class="category">
+          <div class="work"><b>రామాలయం నుంచి వీరు నాయుడు గారి దుకాణం వరకు అభివృద్ధి</b><p>కొత్త డ్రైనేజీ, కాంక్రీట్ పైకప్పులు, స్టేజీ ముందు ప్లాట్‌ఫామ్ నిర్మాణం.</p></div>
+          <div class="work"><b>సచివాలయం పరిసరాల్లో డ్రైనేజీ అభివృద్ధి</b><p>కాకి బాపునాయుడు గారి ఇంటి నుంచి సచివాలయం వైపు డ్రైనేజీ పనులు.</p></div>
+          <div class="work"><b>రాజకీయాలకు అతీతంగా సంక్షేమ పథకాలు</b><p>అర్హులందరికీ ప్రభుత్వ సంక్షేమ పథకాలు అందేలా కృషి.</p></div>
+          <div class="work"><b>ముత్యాలతల్లి ఆలయానికి సహకారం</b><p>ప్రజలు, భక్తులు, దాతల సహకారంతో అభివృద్ధి కార్యక్రమాలకు తోడ్పాటు.</p></div>
         </article>
       </div>
     </section>
@@ -784,6 +883,14 @@
         <a href="https://thimmarajupetapanchatdevelopment.blogspot.com/2022/01/2022.html" rel="noopener" target="_blank">2022–2023 అభివృద్ధి డైరీ ↗</a>
         <a href="https://thimmarajupetapanchatdevelopment.blogspot.com/2026/11/2024.html" rel="noopener" target="_blank">2024–2026 అభివృద్ధి డైరీ ↗</a>
       </div>
+    </section>
+
+    <!-- Feedback & Suggestions -->
+    <section class="container" id="feedback">
+      <h2 class="section-title" data-en="Your Feedback and Suggestions">మీ అభిప్రాయాలు &amp; సూచనలు</h2>
+      <p data-en="Please share your feedback, corrections or suggestions about this village development record using the form below.">ఈ గ్రామ అభివృద్ధి సమాచారంపై మీ అభిప్రాయాలు, సవరణలు, సూచనలను దిగువ ఫారం ద్వారా తెలియజేయండి.</p>
+      <p><a class="cta" href="https://docs.google.com/forms/d/1nYG9W7-cSErgY98Kbf6PEGobMwz59jo3hUxDpCViR04/viewform" rel="noopener" target="_blank" data-en="Open feedback form ↗">ఫీడ్‌బ్యాక్ ఫారం తెరవండి ↗</a></p>
+      <iframe src="https://docs.google.com/forms/d/1nYG9W7-cSErgY98Kbf6PEGobMwz59jo3hUxDpCViR04/viewform?embedded=true" title="Feedback form" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" loading="lazy" style="border:1px solid #dfe7dc;border-radius:12px;background:#fff">Loading…</iframe>
     </section>
   </main>
 
